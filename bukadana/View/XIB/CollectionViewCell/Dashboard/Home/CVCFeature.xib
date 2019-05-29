@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CVCFeature" customModule="bukadana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_card" translatesAutoresizingMaskIntoConstraints="NO" id="DRb-7B-osW">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="140"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_f1" translatesAutoresizingMaskIntoConstraints="NO" id="Cup-F8-76S">
+                        <rect key="frame" x="16" y="16" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="JYa-jI-LxD"/>
+                            <constraint firstAttribute="width" constant="32" id="TFf-vI-Bfx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mn-cq-TJW">
+                        <rect key="frame" x="56" y="22" width="164" height="21"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPe-nW-mIZ">
+                        <rect key="frame" x="20" y="64" width="200" height="14.5"/>
+                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4Mn-cq-TJW" firstAttribute="leading" secondItem="Cup-F8-76S" secondAttribute="trailing" constant="8" id="0P5-Fp-BgL"/>
+                <constraint firstItem="4Mn-cq-TJW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="22" id="1a1-fe-vV9"/>
+                <constraint firstAttribute="trailing" secondItem="OPe-nW-mIZ" secondAttribute="trailing" constant="20" id="3SU-lR-ZD0"/>
+                <constraint firstItem="OPe-nW-mIZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Btc-UZ-VHk"/>
+                <constraint firstAttribute="trailing" secondItem="DRb-7B-osW" secondAttribute="trailing" id="SUq-rg-tFa"/>
+                <constraint firstItem="DRb-7B-osW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aeB-Rs-lX3"/>
+                <constraint firstAttribute="bottom" secondItem="DRb-7B-osW" secondAttribute="bottom" id="bQI-2l-h9v"/>
+                <constraint firstItem="Cup-F8-76S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="c3l-3N-6DM"/>
+                <constraint firstItem="Cup-F8-76S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="i0F-qK-21I"/>
+                <constraint firstAttribute="trailing" secondItem="4Mn-cq-TJW" secondAttribute="trailing" constant="20" id="iXU-Zj-ZmK"/>
+                <constraint firstItem="OPe-nW-mIZ" firstAttribute="top" secondItem="Cup-F8-76S" secondAttribute="bottom" constant="16" id="yNu-r4-htZ"/>
+                <constraint firstItem="DRb-7B-osW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zwm-1H-0Id"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="234" height="150"/>
+            <connections>
+                <outlet property="bgImg" destination="DRb-7B-osW" id="Zrd-6M-qvB"/>
+                <outlet property="icImg" destination="Cup-F8-76S" id="PP8-q3-ENR"/>
+                <outlet property="lblDesc" destination="OPe-nW-mIZ" id="TCQ-WD-4hc"/>
+                <outlet property="lblTitle" destination="4Mn-cq-TJW" id="i3p-LE-kX4"/>
+            </connections>
+            <point key="canvasLocation" x="4.7999999999999998" y="98.950524737631198"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_card" width="1012" height="593"/>
+        <image name="icon_f1" width="149" height="149"/>
+    </resources>
+</document>

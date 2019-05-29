@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="324" id="KGk-i7-Jjw" customClass="TVCLoginForm" customModule="bukadana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="323.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01F-DG-r2v" customClass="BKDNVForm" customModule="bukadana" customModuleProvider="target">
+                        <rect key="frame" x="29" y="34" width="264" height="44"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="8XD-Vz-Rtv"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w1-TS-mIL" customClass="BKDNVForm" customModule="bukadana" customModuleProvider="target">
+                        <rect key="frame" x="29" y="94" width="264" height="44"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Kjh-q6-SB8"/>
+                        </constraints>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDa-mR-qVY">
+                        <rect key="frame" x="195" y="146" width="98" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="rx5-Z7-Igy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <state key="normal" title="Lupa Password?">
+                            <color key="titleColor" red="0.29530679739999999" green="0.46350364960000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP4-7D-Jnf">
+                        <rect key="frame" x="29" y="192" width="264" height="44"/>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.61960784310000006" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="U6G-3w-BRB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <state key="normal" title="Masuk">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wam-5c-MCL">
+                        <rect key="frame" x="64" y="252" width="192" height="27"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XE-U4-7eK">
+                                <rect key="frame" x="115" y="0.0" width="74" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="Daftar disini">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.61960784310000006" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Belum punya akun?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkH-6C-jqO">
+                                <rect key="frame" x="2" y="6" width="110" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="JOA-Fv-MxW"/>
+                            <constraint firstAttribute="width" constant="192" id="lk7-k1-ZbL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FDa-mR-qVY" firstAttribute="top" secondItem="6w1-TS-mIL" secondAttribute="bottom" constant="8" id="32S-Q4-seH"/>
+                    <constraint firstItem="6w1-TS-mIL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="9QI-pH-Oim"/>
+                    <constraint firstItem="01F-DG-r2v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="CGV-FN-nKj"/>
+                    <constraint firstItem="6w1-TS-mIL" firstAttribute="top" secondItem="01F-DG-r2v" secondAttribute="bottom" constant="16" id="DEs-yK-XBc"/>
+                    <constraint firstItem="FDa-mR-qVY" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-11" id="Dwy-5P-5Hp"/>
+                    <constraint firstItem="6w1-TS-mIL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-11" id="EOh-m6-qa2"/>
+                    <constraint firstItem="01F-DG-r2v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="23" id="F6Q-8h-Smn"/>
+                    <constraint firstItem="Wam-5c-MCL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GQp-eL-F27"/>
+                    <constraint firstItem="cP4-7D-Jnf" firstAttribute="top" secondItem="FDa-mR-qVY" secondAttribute="bottom" constant="19" id="ffA-Ep-Xfu"/>
+                    <constraint firstItem="cP4-7D-Jnf" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-11" id="j94-gI-Qer"/>
+                    <constraint firstItem="cP4-7D-Jnf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="olx-xA-nJY"/>
+                    <constraint firstItem="Wam-5c-MCL" firstAttribute="top" secondItem="cP4-7D-Jnf" secondAttribute="bottom" constant="16" id="tpC-J1-pT6"/>
+                    <constraint firstItem="01F-DG-r2v" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-11" id="u1T-pO-7dm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDaftarDisini" destination="9XE-U4-7eK" id="bXA-Jb-NW0"/>
+                <outlet property="btnLupaPassword" destination="FDa-mR-qVY" id="oPD-Ef-V1L"/>
+                <outlet property="btnMasuk" destination="cP4-7D-Jnf" id="Odx-ya-b3n"/>
+                <outlet property="txtEmail" destination="01F-DG-r2v" id="X55-O4-RS0"/>
+                <outlet property="txtPass" destination="6w1-TS-mIL" id="dN6-lX-jgt"/>
+            </connections>
+            <point key="canvasLocation" x="108.8" y="64.767616191904054"/>
+        </tableViewCell>
+    </objects>
+</document>

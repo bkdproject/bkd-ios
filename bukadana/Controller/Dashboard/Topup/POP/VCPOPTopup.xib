@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCPOPTopup" customModule="bukadana" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSubmit" destination="A6c-GY-7LP" id="cQh-zt-05f"/>
+                <outlet property="txtField1" destination="pY8-e0-1NF" id="Ymk-cv-zca"/>
+                <outlet property="txtField2" destination="fq5-mM-1nm" id="Bfg-cN-KBB"/>
+                <outlet property="txtField3" destination="LaP-ZE-JXS" id="hCc-Jk-y5F"/>
+                <outlet property="txtField4" destination="1mQ-kc-9Nk" id="guu-WI-Mmc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBg" destination="9IC-oB-Ao8" id="w9I-E7-npf"/>
+                <outlet property="vwContent" destination="nKk-GM-caN" id="1l4-R7-HeB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IC-oB-Ao8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKk-GM-caN">
+                    <rect key="frame" x="16" y="78" width="288" height="384"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pY8-e0-1NF" customClass="BKDNFormProfile" customModule="bukadana" customModuleProvider="target">
+                            <rect key="frame" x="8" y="24" width="272" height="64"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="tvf-i2-yuw"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fq5-mM-1nm" customClass="BKDNFormProfile" customModule="bukadana" customModuleProvider="target">
+                            <rect key="frame" x="8" y="96" width="272" height="64"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="BF5-59-60E"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaP-ZE-JXS" customClass="BKDNFormProfile" customModule="bukadana" customModuleProvider="target">
+                            <rect key="frame" x="8" y="168" width="272" height="64"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="fuq-B0-H3r"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mQ-kc-9Nk" customClass="BKDNFormProfile" customModule="bukadana" customModuleProvider="target">
+                            <rect key="frame" x="8" y="240" width="272" height="64"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="qvH-D3-doG"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6c-GY-7LP">
+                            <rect key="frame" x="16" y="320" width="147" height="44"/>
+                            <color key="backgroundColor" red="0.396078431372549" green="0.36862745098039218" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="mtk-WK-jT5"/>
+                                <constraint firstAttribute="width" constant="147" id="yhj-Gi-ngv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionSubmit:" destination="-1" eventType="touchUpInside" id="K3i-lP-Zvp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1mQ-kc-9Nk" firstAttribute="top" secondItem="LaP-ZE-JXS" secondAttribute="bottom" constant="8" id="6J6-sN-wcM"/>
+                        <constraint firstItem="pY8-e0-1NF" firstAttribute="top" secondItem="nKk-GM-caN" secondAttribute="top" constant="24" id="Cf9-JP-eSj"/>
+                        <constraint firstAttribute="trailing" secondItem="fq5-mM-1nm" secondAttribute="trailing" constant="8" id="GzV-cY-SC3"/>
+                        <constraint firstItem="LaP-ZE-JXS" firstAttribute="leading" secondItem="nKk-GM-caN" secondAttribute="leading" constant="8" id="HEG-lk-VXx"/>
+                        <constraint firstAttribute="height" constant="384" id="Mmh-E0-Adf"/>
+                        <constraint firstItem="fq5-mM-1nm" firstAttribute="leading" secondItem="nKk-GM-caN" secondAttribute="leading" constant="8" id="Oa3-eH-3Ul"/>
+                        <constraint firstItem="A6c-GY-7LP" firstAttribute="top" secondItem="1mQ-kc-9Nk" secondAttribute="bottom" constant="16" id="USk-gy-mTp"/>
+                        <constraint firstItem="pY8-e0-1NF" firstAttribute="leading" secondItem="nKk-GM-caN" secondAttribute="leading" constant="8" id="X1Q-sB-g4F"/>
+                        <constraint firstItem="1mQ-kc-9Nk" firstAttribute="leading" secondItem="nKk-GM-caN" secondAttribute="leading" constant="8" id="dTa-VJ-HxI"/>
+                        <constraint firstItem="LaP-ZE-JXS" firstAttribute="top" secondItem="fq5-mM-1nm" secondAttribute="bottom" constant="8" id="iFQ-I8-5Yy"/>
+                        <constraint firstItem="fq5-mM-1nm" firstAttribute="top" secondItem="pY8-e0-1NF" secondAttribute="bottom" constant="8" id="iaq-ti-O1e"/>
+                        <constraint firstAttribute="trailing" secondItem="pY8-e0-1NF" secondAttribute="trailing" constant="8" id="lv4-tF-xPX"/>
+                        <constraint firstItem="A6c-GY-7LP" firstAttribute="leading" secondItem="nKk-GM-caN" secondAttribute="leading" constant="16" id="pdM-NY-MEb"/>
+                        <constraint firstAttribute="trailing" secondItem="LaP-ZE-JXS" secondAttribute="trailing" constant="8" id="vGM-9d-sml"/>
+                        <constraint firstAttribute="trailing" secondItem="1mQ-kc-9Nk" secondAttribute="trailing" constant="8" id="yQN-O5-Ae3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nKk-GM-caN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="28F-6F-aNT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nKk-GM-caN" secondAttribute="trailing" constant="16" id="HZm-xn-jwF"/>
+                <constraint firstItem="9IC-oB-Ao8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ICu-k9-9h2"/>
+                <constraint firstItem="9IC-oB-Ao8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QpD-98-dXb"/>
+                <constraint firstItem="9IC-oB-Ao8" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="bfg-jn-jB0"/>
+                <constraint firstItem="9IC-oB-Ao8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iVf-bZ-LK5"/>
+                <constraint firstItem="nKk-GM-caN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="58" id="ncW-Zb-0eY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="99.375" y="47.535211267605632"/>
+        </view>
+    </objects>
+</document>

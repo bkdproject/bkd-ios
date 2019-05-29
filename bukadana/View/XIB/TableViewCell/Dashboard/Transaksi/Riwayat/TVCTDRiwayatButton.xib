@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="D8b-Jw-cdL" customClass="TVCTDRiwayat" customModule="bukadana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D8b-Jw-cdL" id="pBw-uR-ENL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-D9-2iP">
+                        <rect key="frame" x="16" y="0.0" width="288" height="66"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DL-g5-m5d">
+                                <rect key="frame" x="16" y="13" width="256" height="40"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.61960784310000006" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xVu-2v-5oh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Bayar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bayar:" destination="D8b-Jw-cdL" eventType="touchUpInside" id="Bb0-vU-Jd7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4DL-g5-m5d" firstAttribute="top" secondItem="AqF-D9-2iP" secondAttribute="topMargin" constant="5" id="6cK-i6-ebN"/>
+                            <constraint firstItem="4DL-g5-m5d" firstAttribute="leading" secondItem="AqF-D9-2iP" secondAttribute="leading" constant="16" id="duS-Jo-WLy"/>
+                            <constraint firstAttribute="trailing" secondItem="4DL-g5-m5d" secondAttribute="trailing" constant="16" id="wb2-3L-NAw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AqF-D9-2iP" secondAttribute="trailing" constant="16" id="7m6-JS-wSy"/>
+                    <constraint firstAttribute="bottom" secondItem="AqF-D9-2iP" secondAttribute="bottom" constant="-0.5" id="ALj-sF-UYu"/>
+                    <constraint firstItem="AqF-D9-2iP" firstAttribute="leading" secondItem="pBw-uR-ENL" secondAttribute="leading" constant="16" id="G9s-YP-Zr6"/>
+                    <constraint firstAttribute="bottom" secondItem="AqF-D9-2iP" secondAttribute="bottom" constant="-0.5" id="dGD-QU-DVo"/>
+                    <constraint firstItem="AqF-D9-2iP" firstAttribute="top" secondItem="pBw-uR-ENL" secondAttribute="top" id="rA3-8p-aEP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="7Jf-uI-EFs"/>
+            <connections>
+                <outlet property="btnBayar" destination="4DL-g5-m5d" id="hQk-sp-ZVJ"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="58.47076461769116"/>
+        </tableViewCell>
+    </objects>
+</document>

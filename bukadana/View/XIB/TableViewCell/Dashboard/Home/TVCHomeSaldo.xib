@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GnF-Jd-pWn" customClass="TVCHome" customModule="bukadana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GnF-Jd-pWn" id="8fX-NW-9Lx">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Saldo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-1J-jlN">
+                        <rect key="frame" x="16" y="11" width="69.5" height="15"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.535.000 IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-L8-kog">
+                        <rect key="frame" x="16" y="26" width="142" height="24.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                        <color key="textColor" red="0.27043404650000002" green="0.76205583759999995" blue="0.59102943969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3d-py-Psy">
+                        <rect key="frame" x="16" y="80" width="304" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DW7-8N-rNm"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipe User : Pendanaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9o-bs-4QR">
+                        <rect key="frame" x="16" y="59" width="99" height="11"/>
+                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="9"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah Pendanaan : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVN-IN-goq">
+                        <rect key="frame" x="205.5" y="59" width="98.5" height="11"/>
+                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="9"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_o" translatesAutoresizingMaskIntoConstraints="NO" id="jga-Iz-Ibm">
+                        <rect key="frame" x="255" y="18" width="25" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="Sej-qJ-cuD"/>
+                            <constraint firstAttribute="width" constant="25" id="aGf-dX-9Ah"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vL-q2-BtA">
+                        <rect key="frame" x="270" y="16" width="16" height="16"/>
+                        <color key="backgroundColor" red="1" green="0.83972306483204284" blue="0.12970104498710999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="d1f-DK-jl0"/>
+                            <constraint firstAttribute="height" constant="16" id="qcl-vE-PXo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="B3d-py-Psy" secondAttribute="trailing" id="1rw-Pq-8UC"/>
+                    <constraint firstItem="LxN-1J-jlN" firstAttribute="leading" secondItem="8fX-NW-9Lx" secondAttribute="leadingMargin" id="3Gg-LW-yIb"/>
+                    <constraint firstItem="jSG-L8-kog" firstAttribute="top" secondItem="LxN-1J-jlN" secondAttribute="bottom" id="3Vx-p8-kK8"/>
+                    <constraint firstItem="B3d-py-Psy" firstAttribute="top" secondItem="r9o-bs-4QR" secondAttribute="bottom" constant="10" id="D38-Le-OVV"/>
+                    <constraint firstAttribute="trailing" secondItem="vVN-IN-goq" secondAttribute="trailing" constant="16" id="GAA-MY-xMr"/>
+                    <constraint firstItem="B3d-py-Psy" firstAttribute="top" secondItem="vVN-IN-goq" secondAttribute="bottom" constant="10" id="MZH-TS-Ms1"/>
+                    <constraint firstItem="jSG-L8-kog" firstAttribute="leading" secondItem="8fX-NW-9Lx" secondAttribute="leadingMargin" id="Q2d-oV-nmV"/>
+                    <constraint firstItem="r9o-bs-4QR" firstAttribute="leading" secondItem="8fX-NW-9Lx" secondAttribute="leading" constant="16" id="QQV-3a-xNV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jga-Iz-Ibm" secondAttribute="trailing" constant="24" id="WTa-FD-6Pa"/>
+                    <constraint firstItem="LxN-1J-jlN" firstAttribute="top" secondItem="8fX-NW-9Lx" secondAttribute="topMargin" id="Wcp-gY-nAj"/>
+                    <constraint firstItem="0vL-q2-BtA" firstAttribute="top" secondItem="8fX-NW-9Lx" secondAttribute="top" constant="16" id="Yia-57-amK"/>
+                    <constraint firstItem="jga-Iz-Ibm" firstAttribute="top" secondItem="8fX-NW-9Lx" secondAttribute="topMargin" constant="7" id="Z5q-z3-1FR"/>
+                    <constraint firstAttribute="trailing" secondItem="0vL-q2-BtA" secondAttribute="trailing" constant="34" id="pz4-xh-zv8"/>
+                    <constraint firstItem="B3d-py-Psy" firstAttribute="leading" secondItem="8fX-NW-9Lx" secondAttribute="leading" constant="16" id="w3s-MF-z2O"/>
+                    <constraint firstAttribute="bottom" secondItem="B3d-py-Psy" secondAttribute="bottom" constant="0.5" id="xv2-Jb-O5h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblDesc" destination="jSG-L8-kog" id="6aK-32-Ia6"/>
+                <outlet property="lblNotif" destination="0vL-q2-BtA" id="Qb2-GY-aeP"/>
+                <outlet property="lblTipe" destination="r9o-bs-4QR" id="ZMY-3U-gPm"/>
+            </connections>
+            <point key="canvasLocation" x="-241.59999999999999" y="70.164917541229386"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_o" width="121" height="141"/>
+    </resources>
+</document>

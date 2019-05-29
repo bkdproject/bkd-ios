@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Italic.ttf">
+            <string>Montserrat-Italic</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VWPOPProsesPembiayaan" customModule="bukadana" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSubmit" destination="WbG-j8-CbJ" id="xmc-Wu-mNI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwContent" destination="Unz-Qh-W0Q" id="zgn-LL-j2G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-Qh-W0Q">
+                    <rect key="frame" x="16" y="64" width="288" height="363"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROSES PEMBIAYAAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ks-ww-DNt">
+                            <rect key="frame" x="54.5" y="24" width="179" height="20"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo : 2,535,000 IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kem-R9-vx1">
+                            <rect key="frame" x="60" y="80" width="168" height="19"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
+                            <color key="textColor" red="0.27043404650000002" green="0.76205583759999995" blue="0.59102943969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagihan  : 2,000,000 IDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-rE-wyT">
+                            <rect key="frame" x="49" y="107" width="190" height="19"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="16"/>
+                            <color key="textColor" red="0.94901960780000005" green="0.27058823529999998" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah Pendanaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNA-DG-0rY">
+                            <rect key="frame" x="88" y="165" width="112" height="15"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2,000,000" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exp-Gg-T1J">
+                            <rect key="frame" x="16.5" y="188" width="255" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="255" id="HuX-uz-2Ah"/>
+                            </constraints>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbG-j8-CbJ">
+                            <rect key="frame" x="74" y="242" width="140" height="36"/>
+                            <color key="backgroundColor" red="0.1939438869" green="0.41600136859999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="oUZ-8t-VHE"/>
+                                <constraint firstAttribute="width" constant="140" id="s7w-ba-wXD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionSubmit:" destination="-1" eventType="touchUpInside" id="cAA-Uc-CEN"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN3-k7-HKI">
+                            <rect key="frame" x="16" y="306" width="255" height="49"/>
+                            <string key="text">* Catatan : Saldo Anda akan dikurangi tagihan Anda jika menekan tombol Submit. JIka saldo Anda tidak mencukupi harap segera melakukan Top Up terlebih dahulu.</string>
+                            <fontDescription key="fontDescription" name="Montserrat-Italic" family="Montserrat" pointSize="10"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="kem-R9-vx1" firstAttribute="centerX" secondItem="Unz-Qh-W0Q" secondAttribute="centerX" id="2nt-af-Huc"/>
+                        <constraint firstAttribute="trailing" secondItem="RN3-k7-HKI" secondAttribute="trailing" constant="17" id="34K-qF-dD9"/>
+                        <constraint firstItem="WbG-j8-CbJ" firstAttribute="centerX" secondItem="Unz-Qh-W0Q" secondAttribute="centerX" id="EHf-rl-IOU"/>
+                        <constraint firstItem="cNA-DG-0rY" firstAttribute="top" secondItem="PdK-rE-wyT" secondAttribute="bottom" constant="39" id="ESg-QI-8Kl"/>
+                        <constraint firstAttribute="height" constant="363" id="Svr-1J-fLh"/>
+                        <constraint firstAttribute="bottom" secondItem="RN3-k7-HKI" secondAttribute="bottom" constant="8" id="YMJ-Cb-qEc"/>
+                        <constraint firstItem="exp-Gg-T1J" firstAttribute="top" secondItem="cNA-DG-0rY" secondAttribute="bottom" constant="8" id="Z6E-bT-zse"/>
+                        <constraint firstItem="WbG-j8-CbJ" firstAttribute="top" secondItem="exp-Gg-T1J" secondAttribute="bottom" constant="24" id="ZFS-BC-RTp"/>
+                        <constraint firstItem="exp-Gg-T1J" firstAttribute="centerX" secondItem="Unz-Qh-W0Q" secondAttribute="centerX" id="Zz0-xy-b5B"/>
+                        <constraint firstItem="RN3-k7-HKI" firstAttribute="leading" secondItem="Unz-Qh-W0Q" secondAttribute="leading" constant="16" id="dWO-aI-anG"/>
+                        <constraint firstItem="cNA-DG-0rY" firstAttribute="centerX" secondItem="Unz-Qh-W0Q" secondAttribute="centerX" id="f7Y-fo-w27"/>
+                        <constraint firstItem="PdK-rE-wyT" firstAttribute="top" secondItem="kem-R9-vx1" secondAttribute="bottom" constant="8" id="lHt-Y4-hbx"/>
+                        <constraint firstItem="0ks-ww-DNt" firstAttribute="top" secondItem="Unz-Qh-W0Q" secondAttribute="top" constant="24" id="pBQ-DM-vwK"/>
+                        <constraint firstItem="PdK-rE-wyT" firstAttribute="centerX" secondItem="Unz-Qh-W0Q" secondAttribute="centerX" id="rLV-RI-0fs"/>
+                        <constraint firstItem="0ks-ww-DNt" firstAttribute="centerX" secondItem="Unz-Qh-W0Q" secondAttribute="centerX" id="z74-wH-Vyx"/>
+                        <constraint firstItem="kem-R9-vx1" firstAttribute="top" secondItem="0ks-ww-DNt" secondAttribute="bottom" constant="36" id="zlP-v8-4x2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Unz-Qh-W0Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="Goa-PH-n0R"/>
+                <constraint firstItem="Unz-Qh-W0Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="v35-KJ-Lda"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Unz-Qh-W0Q" secondAttribute="trailing" constant="16" id="xqi-fJ-5tm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.75" y="144.71830985915494"/>
+        </view>
+    </objects>
+</document>

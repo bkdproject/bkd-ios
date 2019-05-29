@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="Lz2-ib-VvP" customClass="TVCTopUp" customModule="bukadana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lz2-ib-VvP" id="JKD-0o-vSn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnf-KE-ah1">
+                        <rect key="frame" x="16" y="11" width="288" height="81"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r46-tV-ZoY">
+                                <rect key="frame" x="90" y="15" width="115" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="0.064941592510000007" green="0.63827627899999995" blue="0.74757546190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_topup" translatesAutoresizingMaskIntoConstraints="NO" id="BIg-TW-qHl">
+                                <rect key="frame" x="16" y="11" width="58" height="58"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="KX1-eB-XVn"/>
+                                    <constraint firstAttribute="height" constant="58" id="O0M-jT-fHM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Up Via Akun Virtual (Verifikasi Otomatis)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf2-6d-xNS">
+                                <rect key="frame" x="90" y="32.5" width="190" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="oKe-9I-qT7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wf2-6d-xNS" secondAttribute="trailing" constant="8" id="Wo0-6y-Nrf"/>
+                            <constraint firstItem="Wf2-6d-xNS" firstAttribute="top" secondItem="r46-tV-ZoY" secondAttribute="bottom" id="Yyb-F3-n3S"/>
+                            <constraint firstItem="r46-tV-ZoY" firstAttribute="top" secondItem="Lnf-KE-ah1" secondAttribute="top" constant="15" id="ZkL-S5-rt8"/>
+                            <constraint firstItem="r46-tV-ZoY" firstAttribute="leading" secondItem="BIg-TW-qHl" secondAttribute="trailing" constant="16" id="b17-jk-jTw"/>
+                            <constraint firstItem="BIg-TW-qHl" firstAttribute="leading" secondItem="Lnf-KE-ah1" secondAttribute="leading" constant="16" id="kVJ-tr-UaI"/>
+                            <constraint firstItem="BIg-TW-qHl" firstAttribute="top" secondItem="Lnf-KE-ah1" secondAttribute="top" constant="11" id="obt-MO-aYR"/>
+                            <constraint firstItem="Wf2-6d-xNS" firstAttribute="leading" secondItem="BIg-TW-qHl" secondAttribute="trailing" constant="16" id="poi-fH-Xh5"/>
+                            <constraint firstAttribute="height" constant="81" id="qsE-Yb-A2t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Lnf-KE-ah1" secondAttribute="trailing" constant="16" id="27d-ls-quq"/>
+                    <constraint firstItem="Lnf-KE-ah1" firstAttribute="top" secondItem="JKD-0o-vSn" secondAttribute="top" constant="11" id="kWd-DM-Bwb"/>
+                    <constraint firstItem="Lnf-KE-ah1" firstAttribute="leading" secondItem="JKD-0o-vSn" secondAttribute="leading" constant="16" id="vId-GU-dQo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="imgView" destination="BIg-TW-qHl" id="z4L-kv-p7W"/>
+                <outlet property="vwContent" destination="Lnf-KE-ah1" id="5y5-6o-fOu"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="113.79310344827587"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_topup" width="241" height="241"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+PODS:
+  - AccountKit (4.35.0)
+  - Alamofire (4.8.0)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - CryptoSwift (0.13.1)
+  - FSPagerView (0.8.2)
+  - IQKeyboardManagerSwift (5.0.0)
+  - QRCode (2.0)
+  - Realm (3.13.0):
+    - Realm/Headers (= 3.13.0)
+  - Realm/Headers (3.13.0)
+  - RealmSwift (3.13.0):
+    - Realm (= 3.13.0)
+  - SideMenuSwift (1.0.0)
+  - UIScrollView-InfiniteScroll (1.1.0)
+
+DEPENDENCIES:
+  - AccountKit
+  - Alamofire (~> 4.7)
+  - AlamofireImage
+  - CryptoSwift
+  - FSPagerView
+  - IQKeyboardManagerSwift (= 5.0.0)
+  - QRCode
+  - RealmSwift
+  - SideMenuSwift
+  - UIScrollView-InfiniteScroll (~> 1.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AccountKit
+    - Alamofire
+    - AlamofireImage
+    - CryptoSwift
+    - FSPagerView
+    - IQKeyboardManagerSwift
+    - QRCode
+    - Realm
+    - RealmSwift
+    - SideMenuSwift
+    - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  AccountKit: 870ccaf5d33facda9408783e28fbe68c5211e069
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  CryptoSwift: ff68c35a53e03177d31aaa2c1e8b3e010aeed6cb
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
+  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  Realm: 5edd2ee65406aef591a4f9895de5a3440e51b3d8
+  RealmSwift: be5ebc7930e37cd3376b41cec7f21984528aaa16
+  SideMenuSwift: f8567754feb36ade13ffd613f608829f4b86d4b3
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
+
+PODFILE CHECKSUM: a704633729e7a2520a9d728f4627655c951988e0
+
+COCOAPODS: 1.5.3

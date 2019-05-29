@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Medium.ttf">
+            <string>WorkSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="333" id="iWH-am-mIZ" customClass="TVCRedeem" customModule="bukadana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="333"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iWH-am-mIZ" id="UAQ-iI-AKf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="332.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45D-Q2-WSz">
+                        <rect key="frame" x="16" y="11" width="288" height="311"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hI-vJ-AHA" customClass="BKDNFormProfile" customModule="bukadana" customModuleProvider="target">
+                                <rect key="frame" x="8" y="17" width="264" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="ZFz-KH-R3a"/>
+                                    <constraint firstAttribute="height" constant="64" id="xHK-uA-U8H"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiR-km-eSY" customClass="BKDNFormProfile" customModule="bukadana" customModuleProvider="target">
+                                <rect key="frame" x="8" y="93" width="264" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="DdE-us-Zat"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="gWn-NC-44Q"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLq-2X-ozJ">
+                                <rect key="frame" x="16" y="253" width="144" height="44"/>
+                                <color key="backgroundColor" red="0.066009245810000006" green="0.63425743580000005" blue="0.74766916039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="4J3-GN-5WO"/>
+                                    <constraint firstAttribute="height" constant="44" id="6RN-5X-CPC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Medium" family="Work Sans" pointSize="17"/>
+                                <state key="normal" title="Selanjutnya">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnUpdate:" destination="iWH-am-mIZ" eventType="touchUpInside" id="2fr-TA-F8i"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpi-nv-LNA" customClass="BKDNFormProfile" customModule="bukadana" customModuleProvider="target">
+                                <rect key="frame" x="8" y="169" width="264" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="SlQ-pY-WaK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="amv-bP-bMd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hLq-2X-ozJ" firstAttribute="leading" secondItem="45D-Q2-WSz" secondAttribute="leading" constant="16" id="07c-77-15L"/>
+                            <constraint firstAttribute="trailing" secondItem="kiR-km-eSY" secondAttribute="trailing" constant="16" id="3lq-JU-Mae"/>
+                            <constraint firstItem="1hI-vJ-AHA" firstAttribute="top" secondItem="45D-Q2-WSz" secondAttribute="top" constant="17" id="F2f-a1-E2X"/>
+                            <constraint firstItem="kiR-km-eSY" firstAttribute="top" secondItem="1hI-vJ-AHA" secondAttribute="bottom" constant="12" id="JOy-Fr-UNq"/>
+                            <constraint firstItem="kiR-km-eSY" firstAttribute="leading" secondItem="45D-Q2-WSz" secondAttribute="leading" constant="8" id="O3s-Oa-57p"/>
+                            <constraint firstAttribute="trailing" secondItem="qpi-nv-LNA" secondAttribute="trailing" constant="16" id="TUj-QE-ZSW"/>
+                            <constraint firstItem="1hI-vJ-AHA" firstAttribute="leading" secondItem="45D-Q2-WSz" secondAttribute="leading" constant="8" id="Vzu-zA-QAa"/>
+                            <constraint firstAttribute="trailing" secondItem="1hI-vJ-AHA" secondAttribute="trailing" constant="16" id="cqN-GU-OiU"/>
+                            <constraint firstItem="kiR-km-eSY" firstAttribute="top" secondItem="1hI-vJ-AHA" secondAttribute="bottom" constant="12" id="e4g-9N-Piq"/>
+                            <constraint firstAttribute="height" constant="311" id="flI-m1-Xkd"/>
+                            <constraint firstItem="qpi-nv-LNA" firstAttribute="leading" secondItem="45D-Q2-WSz" secondAttribute="leading" constant="8" id="sP6-Kf-P92"/>
+                            <constraint firstAttribute="bottom" secondItem="hLq-2X-ozJ" secondAttribute="bottom" constant="14" id="wzC-EU-GBV"/>
+                            <constraint firstItem="qpi-nv-LNA" firstAttribute="top" secondItem="kiR-km-eSY" secondAttribute="bottom" constant="12" id="zGy-zG-981"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="45D-Q2-WSz" firstAttribute="leading" secondItem="UAQ-iI-AKf" secondAttribute="leading" constant="16" id="3PG-04-zp2"/>
+                    <constraint firstItem="45D-Q2-WSz" firstAttribute="top" secondItem="UAQ-iI-AKf" secondAttribute="top" constant="11" id="Mp9-vT-pKp"/>
+                    <constraint firstAttribute="trailing" secondItem="45D-Q2-WSz" secondAttribute="trailing" constant="16" id="qGr-xg-cUE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="btnUpdate" destination="hLq-2X-ozJ" id="Pbw-34-tN1"/>
+                <outlet property="txtField1" destination="1hI-vJ-AHA" id="JKp-Kb-Ret"/>
+                <outlet property="txtField2" destination="kiR-km-eSY" id="D1n-XG-3ur"/>
+                <outlet property="txtField3" destination="qpi-nv-LNA" id="JGY-BV-zMX"/>
+                <outlet property="vwContent" destination="45D-Q2-WSz" id="t83-EV-N4U"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="231.63418290854574"/>
+        </tableViewCell>
+    </objects>
+</document>

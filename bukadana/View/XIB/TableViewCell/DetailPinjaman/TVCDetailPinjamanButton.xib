@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="QRb-dr-lJR" customClass="TVCDetailPinjaman" customModule="bukadana" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QRb-dr-lJR" id="m0u-Wi-ptI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2E-1T-cjc">
+                        <rect key="frame" x="36" y="11.5" width="120" height="27"/>
+                        <color key="backgroundColor" red="0.27043404650000002" green="0.76205583759999995" blue="0.59102943969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="hi7-mA-Hpw"/>
+                            <constraint firstAttribute="width" constant="120" id="rDH-f9-lRA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Kembali"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2m-GE-oCZ">
+                        <rect key="frame" x="164" y="11.5" width="120" height="27"/>
+                        <color key="backgroundColor" red="0.1939438869" green="0.41600136859999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="XMO-kT-CoC"/>
+                            <constraint firstAttribute="width" constant="120" id="e0i-bG-RAX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="12"/>
+                        <state key="normal" title="Biayai">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V2m-GE-oCZ" firstAttribute="centerY" secondItem="m0u-Wi-ptI" secondAttribute="centerY" id="9o3-NJ-ksd"/>
+                    <constraint firstItem="H2E-1T-cjc" firstAttribute="centerY" secondItem="m0u-Wi-ptI" secondAttribute="centerY" id="Unu-qZ-41d"/>
+                    <constraint firstItem="V2m-GE-oCZ" firstAttribute="leading" secondItem="H2E-1T-cjc" secondAttribute="trailing" constant="8" id="nUm-df-5VW"/>
+                    <constraint firstItem="V2m-GE-oCZ" firstAttribute="centerX" secondItem="m0u-Wi-ptI" secondAttribute="centerX" constant="64" id="soO-q7-iGX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnBiayai" destination="V2m-GE-oCZ" id="3Ff-MP-Rw4"/>
+                <outlet property="btnKembali" destination="H2E-1T-cjc" id="kID-cV-Pk2"/>
+            </connections>
+            <point key="canvasLocation" x="-38.399999999999999" y="100.74962518740631"/>
+        </tableViewCell>
+    </objects>
+</document>
